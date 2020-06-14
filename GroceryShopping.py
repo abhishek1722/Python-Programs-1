@@ -1,6 +1,8 @@
+#program to maintain the items in grocery store
 #data stored in file
 shopping_list = ["banana", "orange", "apple","shirts","utensils","curtains","stationary"]
 
+#dictionary to store quantity of items present in store
 stock = { "banana": 24,
     "apple": 0,
     "orange": 32,
@@ -11,6 +13,7 @@ stock = { "banana": 24,
     "shirts":52
 }
 
+#dictionary to store price of items present in store
 prices = { "banana": 4,
     "apple": 2,
     "orange": 4,
@@ -21,6 +24,7 @@ prices = { "banana": 4,
     "shirts":500
 }
 
+#to write items in text file with cost n quantity
 f=open('grocerylist.txt','w')
 for ele in shopping_list:
     f.write(ele+'\n')
@@ -34,10 +38,6 @@ f.close()
 
 
 print("*********  Welcome to Wallmart Store **********")
-#print("Available items in stock :")
-#print(shopping_list)
-#print(stock)
-#print(prices)
 
 def shop():
 #while True:
